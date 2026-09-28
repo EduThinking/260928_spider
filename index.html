@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07101f" />
+    <meta name="description" content="책임과 용기를 위한 오리지널 한 줄 명언" />
+    <link rel="manifest" href="public/manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css?v=3" />
+    <title>거미줄 한 줄</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header"><a class="brand" href="#today" aria-label="오늘 화면으로">거미줄 <i></i> 한 줄</a><span class="offline-mark">마음을 잇는 문장</span></header>
+      <section id="app" aria-live="polite"><div class="loading">문장을 불러오는 중…</div></section>
+      <nav class="bottom-nav" aria-label="주 메뉴">
+        <button data-view="today" class="nav-button active"><span>✦</span>오늘</button>
+        <button data-view="browse" class="nav-button"><span>⌘</span>탐색</button>
+        <button data-view="saved" class="nav-button"><span>♡</span>저장함</button>
+        <button data-view="settings" class="nav-button"><span>⚙</span>설정</button>
+      </nav>
+    </main>
+    <div id="toast" class="toast" role="status"></div>
+    <script type="module" src="app.js?v=3"></script>
+  </body>
+</html>
